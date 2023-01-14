@@ -15,6 +15,7 @@ fi
 echo Configuring V2ray
 wget -O ./v2ray/config.json "$V2RAY_CONFIG_FILE_URI" &> /dev/null
 sed -i "s/VMESS_UUID/$UUID/" ./v2ray/config.json
+sed -i "s/VMESS_SECURITY/$VMESS_SECURITY/" ./v2ray/config.json
 echo "Starting V2ray Services"
 cd ./v2ray
 ./v2ray run
