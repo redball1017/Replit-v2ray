@@ -28,5 +28,12 @@
 
 ![](https://gcore.jsdelivr.net/gh/redball1017/Replit-v2ray@md-files/tutorial-5.png)
 
+然后，点击顶部的Run
 
+等待一下，看看Console栏里面是否有"V2Ray x.x.x started"，如果有，继续下一步，否则请看看哪里设置错了。
 
+然后，进入你的V2ray客户端，并参考以下来添加服务器
+
+![](https://gcore.jsdelivr.net/gh/redball1017/Replit-v2ray@md-files/tutorial-7.png)
+
+大功告成
