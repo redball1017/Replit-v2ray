@@ -45,7 +45,7 @@
 | 变量                  | 默认值                                                       | 说明                                                         |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | V2RAY_DOWNLOAD_URI    | https://github.com/XTLS/Xray-core/releases/download/v1.7.2/Xray-linux-64.zip | V2ray/XRay资源压缩包的下载地址，文件后缀一定要是zip          |
-| V2RAY_CONFIG_FILE_URI | https://github.com/redball1017/HerokuV2ray/raw/main/etc/xray.json | V2ray/Xray配置文件下载地址，可自定义，但端口一定要为443，流协议一定要为ws否则无法连接 |
+| V2RAY_CONFIG_FILE_URI | https://replit-v2ray-dl.redball1017.gq/config-all.json       | V2ray/Xray配置文件下载地址，可自定义，但端口一定要为443，流协议一定要为ws否则无法连接 |
 | UUID                  |                                                              | 这个是vmess,vless的用户id，Trojan的密码                      |
 | VMESS_SECURITY        | none                                                         | vmess加密方式，可以为aes128-gcm,chacha20-poly1305,auto,none,zero |
 | V2RAY_FILE_NAME       | Xray-linux-64.zip                                            | V2ray压缩包文件名，一定要和V2RAY_DOWNLOAD_URI下载的文件一致，否则会出错。 |
