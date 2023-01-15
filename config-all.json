@@ -43,7 +43,7 @@
         "settings": {
             "clients": [
                 {
-                    "password": "TROPAN_PWD"
+                    "password": "TROJAN_PWD"
                 }
             ]
         },
