@@ -20,17 +20,9 @@
 
 ![](https://replit-v2ray-dl.redball1017.gq/Tutorial-3.png)
 
-等待它导入完毕后，点击Tools栏下面的Secrets项
+等待它导入完毕后，点击顶部的Run
 
-![](https://replit-v2ray-dl.redball1017.gq/tutorial-4.png)
-
-然后在右边修改UUID的值（即点击UUID旁边的笔）UUID请在[这里生成](https://www.uuidgenerator.net/)，然后点击Save
-
-![](https://replit-v2ray-dl.redball1017.gq/tutorial-5.png)
-
-然后，点击顶部的Run
-
-等待一下，看看Console栏里面是否有"V2Ray x.x.x started"，如果有，继续下一步，否则请看看哪里设置错了。
+等待一下，看看Console中是否有出现UUID，如果有请记录下来。
 
 然后，进入你的V2ray客户端，并参考以下来添加服务器
 
@@ -46,7 +38,6 @@
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | V2RAY_DOWNLOAD_URI    | https://github.com/XTLS/Xray-core/releases/download/v1.7.2/Xray-linux-64.zip | V2ray/XRay资源压缩包的下载地址，文件后缀一定要是zip          |
 | V2RAY_CONFIG_FILE_URI | https://replit-v2ray-dl.redball1017.gq/config-all.json       | V2ray/Xray配置文件下载地址，可自定义，但端口一定要为443，流协议一定要为ws否则无法连接 |
-| UUID                  |                                                              | 这个是vmess,vless的用户id，Trojan的密码                      |
 | VMESS_SECURITY        | none                                                         | vmess加密方式，可以为aes128-gcm,chacha20-poly1305,auto,none,zero |
 | V2RAY_FILE_NAME       | Xray-linux-64.zip                                            | V2ray压缩包文件名，一定要和V2RAY_DOWNLOAD_URI下载的文件一致，否则会出错。 |
 | V2RAY_CORE_FILE_NAME  | xray                                                         | V2ray可执行文件名，可以为v2ray,xray                          |
