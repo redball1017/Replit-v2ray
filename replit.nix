@@ -4,5 +4,6 @@
         pkgs.bashInteractive
         pkgs.man
         pkgs.jq.bin
+        pkgs.pwgen
     ];
 }
