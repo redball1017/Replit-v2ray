@@ -1,5 +1,5 @@
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
-clear
+V2RAY_DOWNLOAD_URI=$(curl -s "https://api.github.com/repos/XTLS/Xray-core/releases/latest"  | jq .assets[14].browser_download_url  | sed s/\"//  | sed s/\"//)
 echo Downloading V2ray
 if [ ! -f "$V2RAY_FILE_NAME" ]; then
   wget "$V2RAY_DOWNLOAD_URI" &> /dev/null
