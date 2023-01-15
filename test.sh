@@ -1,1 +1,0 @@
-curl https://api.github.com/repos/v2fly/v2ray-core/releases/latest > ./tmp/github-api.json
