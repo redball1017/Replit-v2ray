@@ -43,7 +43,7 @@
         "settings": {
             "clients": [
                 {
-                    "password": "VMESS_UUID"
+                    "password": "TROPAN_PWD"
                 }
             ]
         },
