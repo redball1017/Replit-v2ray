@@ -86,7 +86,6 @@
   "outbounds": [
     {
         "protocol": "freedom",
-        "tag": "direct",
         "settings": {
             "domainStrategy": "UseIP"
         }
@@ -95,7 +94,8 @@
 "dns": {
     "servers": [
         "8.8.8.8",
-        "8.8.4.4"
+        "8.8.4.4",
+        "1.1.1.1"
     ]
 }
 }
