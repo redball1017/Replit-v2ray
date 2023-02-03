@@ -1,101 +1,108 @@
 {
-  "inbounds": [
-    {
-      "port": 443,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "VMESS_UUID",
-            "alterId": 0,
-            "security": "VMESS_SECURITY"
-          }
+    "inbounds": [
+        {
+            "listen": "127.0.0.1/vmess",
+            "port": 443,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "cb8b284f-67c3-48e7-be86-6ce2a85981c8",
+                        "alterId": 0,
+                        "security": "none"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/vmess"
+                }
+            }
+        },
+        {
+            "listen": "127.0.0.1/vless",
+            "port": 443,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "cb8b284f-67c3-48e7-be86-6ce2a85981c8",
+                        "level": 0,
+                        "email": "love@v2fly.org"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/vless"
+                }
+            }
+        },
+        {
+            "listen":"127.0.0.1/trojan",
+            "port": 443,
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "UPCL97Xtb36Icjo"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/trojan"
+                }
+            }
+        },
+        {
+            "listen":"127.0.0.1/shadowsocks",
+            "port": 443,
+            "protocol": "shadowsocks",
+            "settings": {
+                "method": "chacha20-ietf-poly1305",
+                "password": "123456"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                    "path": "/shadowsocks"
+                }
+            }
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": "1080",
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "ip": "127.0.0.1"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {
+                "domainStrategy": "UseIPv4"
+            }
+        }
+    ],
+    "dns": {
+        "servers": [
+            "8.8.8.8",
+            "8.8.4.4",
+            "1.1.1.1"
         ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmess"
-        }
-      }
     },
-    {
-        "port": 443,
-        "protocol": "vless",
-        "settings": {
-            "clients": [
-                {
-                    "id": "VMESS_UUID",
-                    "level": 0,
-                    "email": "love@v2fly.org"
-                }
-            ],
-            "decryption": "none"
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "none",
-            "wsSettings": {
-                "path": "/vless"
-            }
-        }
-    },
-    {
-        "port": 443,
-        "protocol": "trojan",
-        "settings": {
-            "clients": [
-                {
-                    "password": "TROJAN_PWD"
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "wsSettings": {
-                "path": "/trojan"
-            }
-        }
-    },
-    {
-        "port": 443,
-        "protocol": "shadowsocks",
-        "settings": {
-            "method": "chacha20-ietf-poly1305",
-            "password": "123456"
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "wsSettings": {
-                "path": "/shadowsocks"
-            }
-        }
-    },
-    {
-        "listen": "127.0.0.1",
-        "port": "1080",
-        "protocol": "socks",
-        "settings": {
-            "auth": "noauth",
-            "udp": true,
-            "ip": "127.0.0.1"
-        }
+    "log": {
+        "loglevel": "info"
     }
-  ],
-  "outbounds": [
-    {
-        "protocol": "freedom",
-        "settings": {
-            "domainStrategy": "UseIPv4"
-        }
-    }
-],
-"dns": {
-    "servers": [
-        "8.8.8.8",
-        "8.8.4.4",
-        "1.1.1.1"
-    ]
-}
 }
