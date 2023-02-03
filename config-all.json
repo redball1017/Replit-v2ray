@@ -1,15 +1,15 @@
 {
     "inbounds": [
         {
-            "listen": "127.0.0.1/vmess",
+            "listen": "127.0.0.1",
             "port": 443,
             "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
-                        "id": "cb8b284f-67c3-48e7-be86-6ce2a85981c8",
+                        "id": "VMESS_UUID",
                         "alterId": 0,
-                        "security": "none"
+                        "security": "VMESS_SECURITY"
                     }
                 ]
             },
@@ -21,13 +21,13 @@
             }
         },
         {
-            "listen": "127.0.0.1/vless",
+            "listen": "127.0.0.1",
             "port": 443,
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "id": "cb8b284f-67c3-48e7-be86-6ce2a85981c8",
+                        "id": "VMESS_UUID",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -43,13 +43,13 @@
             }
         },
         {
-            "listen":"127.0.0.1/trojan",
+            "listen":"127.0.0.1",
             "port": 443,
             "protocol": "trojan",
             "settings": {
                 "clients": [
                     {
-                        "password": "UPCL97Xtb36Icjo"
+                        "password": "TROJAN_PWD"
                     }
                 ]
             },
@@ -61,7 +61,7 @@
             }
         },
         {
-            "listen":"127.0.0.1/shadowsocks",
+            "listen":"127.0.0.1",
             "port": 443,
             "protocol": "shadowsocks",
             "settings": {
