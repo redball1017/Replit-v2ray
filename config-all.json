@@ -1,7 +1,6 @@
 {
     "inbounds": [
         {
-            "listen": "127.0.0.1",
             "port": 443,
             "protocol": "vmess",
             "settings": {
@@ -18,10 +17,17 @@
                 "wsSettings": {
                     "path": "/vmess"
                 }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ]
             }
         },
         {
-            "listen": "127.0.0.1",
             "port": 443,
             "protocol": "vless",
             "settings": {
@@ -43,7 +49,6 @@
             }
         },
         {
-            "listen":"127.0.0.1",
             "port": 443,
             "protocol": "trojan",
             "settings": {
@@ -61,7 +66,6 @@
             }
         },
         {
-            "listen":"127.0.0.1",
             "port": 443,
             "protocol": "shadowsocks",
             "settings": {
@@ -74,16 +78,6 @@
                 "wsSettings": {
                     "path": "/shadowsocks"
                 }
-            }
-        },
-        {
-            "listen": "127.0.0.1",
-            "port": "1080",
-            "protocol": "socks",
-            "settings": {
-                "auth": "noauth",
-                "udp": true,
-                "ip": "127.0.0.1"
             }
         }
     ],
