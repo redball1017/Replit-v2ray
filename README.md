@@ -43,9 +43,9 @@
 
 ```json
 {
-  "V2RAY_CONFIG_FILE_URI": "https://replit-v2ray-dl.redball1017.gq/config-all.json",
+  "CONFIG_FILE_URI": "https://repl-assets.rd1017.top/config-all.json",
   "VMESS_SECURITY": "none",
-  "V2RAY_CORE_FILE_NAME": "xray"
+  "CORE_FILE_NAME": "xray"
 }
 ```
 
