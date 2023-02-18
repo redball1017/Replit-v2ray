@@ -1,4 +1,8 @@
 echo 正在部署环境
+VAR_DL="https://repl-assets.rd1017.top/var.json"
+CONFIG_FILE_URI=$(curl -s "$VAR_DL"  | jq .CONFIG_FILE_URI  | sed s/\"//  | sed s/\"//)
+VMESS_SECURITY=$(curl -s "$VAR_DL"  | jq .VMESS_SECURITY  | sed s/\"//  | sed s/\"//)
+CORE_FILE_NAME=$(curl -s "$VAR_DL"  | jq CORE_FILE_NAME  | sed s/\"//  | sed s/\"//)
 TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
 FILE_DOWNLOAD_URI=$(curl -s "https://api.github.com/repos/XTLS/Xray-core/releases/latest"  | jq .assets[14].browser_download_url  | sed s/\"//  | sed s/\"//)
