@@ -1,4 +1,5 @@
 echo 正在部署环境
+REPLSLUG=${REPL_SLUG}
 TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
 FILE_DOWNLOAD_URI=$(curl -s "https://api.github.com/repos/XTLS/Xray-core/releases/latest"  | jq .assets[14].browser_download_url  | sed s/\"//  | sed s/\"//)
@@ -37,4 +38,4 @@ clear
 echo -e "VMESS信息:\n端口(port):443\n额外ID(alterId):0\n用户ID(id):$UUID\n加密方式(security):$VMESS_SECURITY\n传输协议(network):ws\nWS路径(wspath):/vmess\nTLS:tls\nVLESS信息:\n端口(port):443\n用户ID(id):$UUID\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls\nTrojan信息:\n端口(port):443\n密码(password):$TPWD\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls"
 touch ./CORE/log.log
 cd ./CORE
-./$CORE_FILE_NAME run &> ./CORE/log.log
+./$CORE_FILE_NAME run &> /home/runner/$REPLSLUG/CORE/log.log
