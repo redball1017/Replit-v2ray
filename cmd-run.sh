@@ -33,9 +33,9 @@ wget -O ./CORE/config.json "$CONFIG_FILE_URI" &> /dev/null
 sed -i "s/VMESS_UUID/$UUID/" ./CORE/config.json
 sed -i "s/TROJAN_PWD/$TPWD/" ./CORE/config.json
 sed -i "s/VMESS_SECURITY/$VMESS_SECURITY/" ./CORE/config.json
-echo "正在启动V2ray"
+echo "正在启动"
 clear
-echo -e "VMESS信息:\n端口(port):443\n额外ID(alterId):0\n用户ID(id):$UUID\n加密方式(security):$VMESS_SECURITY\n传输协议(network):ws\nWS路径(wspath):/vmess\nTLS:tls\nVLESS信息:\n端口(port):443\n用户ID(id):$UUID\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls\nTrojan信息:\n端口(port):443\n密码(password):$TPWD\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls"
+echo -e "VM信息:\n端口(port):443\n额外ID(alterId):0\n用户ID(id):$UUID\n加密方式(security):$VMESS_SECURITY\n传输协议(network):ws\nWS路径(wspath):/vmess\nTLS:tls\nVL信息:\n端口(port):443\n用户ID(id):$UUID\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls\nTrojan信息:\n端口(port):443\n密码(password):$TPWD\n传输协议(network):ws\nWS路径(wspath):/vless\nTLS:tls"
 touch ./CORE/log.log
 cd ./CORE
 ./$CORE_FILE_NAME run &> /home/runner/$REPLSLUG/CORE/log.log
