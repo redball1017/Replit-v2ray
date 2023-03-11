@@ -1,2 +1,2 @@
-CONFIG_FILE_URI=https://repl-assets.rd1017.top/config-all.json
+CONFIG_FILE_URI="https://repl-assets.rd1017.top/config-all.json"
 CORE_FILE_NAME="core"
