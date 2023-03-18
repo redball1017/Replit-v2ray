@@ -91,10 +91,10 @@
     ],
     "dns": {
         "servers": [
-            "https+local://dns.google/dns-query",
-            "https+local://dns.quad9.net/dns-query",
-            "https+local://doh.dns.sb/dns-query",
-            "https+local://doh.opendns.com/dns-query"
+            "8.8.8.8",
+            "8.8.4.4",
+            "1.1.1.1",
+            "1.0.0.1"
         ]
     },
     "log": {
