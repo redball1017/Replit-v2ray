@@ -91,10 +91,10 @@
     ],
     "dns": {
         "servers": [
-            "8.8.8.8",
-            "8.8.4.4",
-            "1.1.1.1",
-            "1.0.0.1"
+            "https+local://dns.google/dns-query",
+            "https+local://1dot1dot1dot1.cloudflare-dns.com",
+            "https+local://dns.quad9.net/dns-query",
+            "https+local://doh.dns.sb/dns-query"
         ]
     },
     "log": {
