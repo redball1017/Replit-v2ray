@@ -36,28 +36,3 @@
 ![](https://replit-v2ray-dl.redball1017.gq/tutorial-7.png)
 
 大功告成
-
-## 可选步骤
-
-如果遇到脚本执行失败，可将下列json代码导入Secret中（Edit raw JSON）
-
-```json
-{
-  "CONFIG_FILE_URI": "https://repl-assets.rd1017.top/config-all.json",
-  "VMESS_SECURITY": "none",
-  "CORE_FILE_NAME": "xray"
-}
-```
-
-
-
-## 环境变量配置
-
-在创建repl之前可以在Repo里的.env那里改；创建repl之后请到repl的Tools栏下面的Secrets项修改，修改完后记得停止再启动repl
-
-| 变量                  | 默认值                                                 |                             说明                             |
-| --------------------- | ------------------------------------------------------ | :----------------------------------------------------------: |
-| V2RAY_CONFIG_FILE_URI | https://replit-v2ray-dl.redball1017.gq/config-all.json | V2ray/Xray配置文件下载地址，可自定义，但端口一定要为443，流协议一定要为ws否则无法连接 |
-| VMESS_SECURITY        | none                                                   | vmess加密方式，可以为aes128-gcm,chacha20-poly1305,auto,none,zero |
-| V2RAY_CORE_FILE_NAME  | xray                                                   |             V2ray可执行文件名，可以为v2ray,xray              |
-
