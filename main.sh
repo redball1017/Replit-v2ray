@@ -1,5 +1,12 @@
 echo 正在部署环境
+<<<<<<< HEAD
 REPLSLUG=${REPL_SLUG}
+=======
+VAR_DL="https://repl-assets.rd1017.top/var.json"
+CONFIG_FILE_URI=$(curl -s "$VAR_DL"  | jq .CONFIG_FILE_URI  | sed s/\"//  | sed s/\"//)
+VMESS_SECURITY=$(curl -s "$VAR_DL"  | jq .VMESS_SECURITY  | sed s/\"//  | sed s/\"//)
+CORE_FILE_NAME=$(curl -s "$VAR_DL"  | jq CORE_FILE_NAME  | sed s/\"//  | sed s/\"//)
+>>>>>>> 0a5b81dd9dc79373e3aa9de7c3676601a8d1fd0d
 TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
 RAMDOM_1=$(openssl rand -base64 5)
