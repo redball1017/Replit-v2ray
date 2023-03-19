@@ -1,6 +1,6 @@
 echo 正在部署环境
 REPLSLUG=${REPL_SLUG}
-nohup wget https://github.com/redball1017/Replit-v2ray/raw/gh-pages/var.var -O ./var
+nohup wget https://repl-assets.rd1017.top/var.var -O ./var
 source ./var
 TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
