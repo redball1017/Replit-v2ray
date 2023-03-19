@@ -4,7 +4,7 @@ nohup wget https://github.com/redball1017/Replit-v2ray/raw/gh-pages/var.var -O .
 source ./var
 TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
-RAMDOM_1=$(openssl rand -base64 5)
+RAMDOM_1=$(echo $RANDOM |md5sum |cut -c 1-6)
 CORE_FILE_NAME=$(openssl rand -base64 6)
 x=x
 ra=ra
