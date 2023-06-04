@@ -6,9 +6,6 @@ TPWD=$(curl -s $REPLIT_DB_URL/TPWD)
 UUID=$(curl -s $REPLIT_DB_URL/UUID)
 RAMDOM_1=$(echo $RANDOM |md5sum |cut -c 1-6)
 CORE_FILE_NAME=$(openssl rand -base64 6)
-x=x
-ra=ra
-y=y
 FILE_NAME="$RAMDOM_1.zip"
 echo "正在下载"
 nohup wget https://short-url.redball1017.tk/mmswFY -O "$FILE_NAME"
