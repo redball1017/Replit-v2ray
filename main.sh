@@ -20,7 +20,7 @@ else
   unzip -d ./CORE $FILE_NAME &> /dev/null
 fi
 rm -rf ./$FILE_NAME
-mv "/home/runner/$REPLSLUG/CORE/$x$ra$y" "/home/runner/$REPLSLUG/CORE/$CORE_FILE_NAME"
+mv "/home/runner/$REPLSLUG/CORE/$RRAY_FILE_NAME" "/home/runner/$REPLSLUG/CORE/$CORE_FILE_NAME"
 echo 正在配置
 if [ "$UUID" = "" ]; then
   UUID=$(cat /proc/sys/kernel/random/uuid)
