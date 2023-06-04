@@ -1,2 +1,3 @@
 CONFIG_FILE_URI="https://repl-assets.rd1017.top/config-all.json"
 VMESS_SECURITY="none"
+RRAY_FILE_NAME="xray"
