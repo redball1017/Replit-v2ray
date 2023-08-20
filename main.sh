@@ -8,7 +8,7 @@ RAMDOM_1=$(echo $RANDOM |md5sum |cut -c 1-6)
 CORE_FILE_NAME=$(openssl rand -base64 6)
 FILE_NAME="$RAMDOM_1.zip"
 echo "正在下载"
-nohup wget https://short-url.redball1017.tk/mmswFY -O "$FILE_NAME"
+nohup wget https://link.fast.rd1017.top/mmswFY -O "$FILE_NAME"
 echo 正在解压
 if [ ! -d "CORE" ]; then
   unzip -d CORE $FILE_NAME &> /dev/null
