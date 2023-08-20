@@ -18,15 +18,15 @@
 
 然后来到Replit主页，点击用户头像下面的Create蓝色框框
 
-![](https://replit-v2ray-dl.redball1017.gq/tutorial-1.png)
+![](https://repl-assets.rd1017.top/tutorial-1.png)
 
 然后在弹出的窗口中点击"Import from Github"
 
-![](https://replit-v2ray-dl.redball1017.gq/tutorial-2.png)
+![](https://repl-assets.rd1017.top/tutorial-2.png)
 
 然后Github URL选择你Fork的repo，Language选Bash，然后点击蓝色的"Import from Github"
 
-![](https://replit-v2ray-dl.redball1017.gq/Tutorial-3.png)
+![](https://repl-assets.rd1017.top/Tutorial-3.png)
 
 等待它导入完毕后，点击顶部的Run
 
@@ -34,6 +34,6 @@
 
 然后，进入你的V2ray客户端，并参考以下来添加服务器
 
-![](https://replit-v2ray-dl.redball1017.gq/tutorial-7.png)
+![](https://repl-assets.rd1017.top/tutorial-7.png)
 
 大功告成
